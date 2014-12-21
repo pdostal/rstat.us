@@ -101,6 +101,8 @@ GEM
     database_cleaner (0.6.7)
     draper (0.11.1)
       activesupport (>= 2.3.10)
+    email_validator (1.5.0)
+      activemodel
     equalizer (0.0.9)
     erubis (2.7.0)
     exceptional (2.0.33)
@@ -299,6 +301,7 @@ DEPENDENCIES
   delayed_job!
   delayed_job_mongo_mapper!
   draper (~> 0.11.1)
+  email_validator (~> 1.5.0)
   exceptional (~> 2.0.32)
   fabrication (~> 1.2.0)
   haml (~> 3.1.4)

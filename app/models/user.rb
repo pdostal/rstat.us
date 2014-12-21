@@ -42,6 +42,7 @@ class User
   # Global preference set via user's profile controlling the state of the Post to Twitter checkbox
   key :always_send_to_twitter, Integer, :default => 1
 
+  validates :email, :email => true
   validate :email_already_confirmed
   validates_uniqueness_of :username,
                           :allow_nil => :true,
