@@ -124,7 +124,7 @@ describe "edit profile" do
 
     it "verifies your email if you change it" do
       visit "/users/#{@u.username}/edit"
-      email = "new_email@new_email.com"
+      email = "new_email@newemail.com"
       fill_in "email", :with => email
 
       VCR.use_cassette('update_profile_email') do
